@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lauren Frederick — CV</title>
+  <meta name="description" content="Curriculum vitae of Lauren Frederick, CPA — PhD candidate in Accounting, Cornell University.">
+  <style>
+    :root { --bg: #1c1e22; }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+    /* Full-viewport PDF viewer */
+    .viewer {
+      position: fixed;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+    /* Fallback shown only if <object> can't render (e.g. some mobile browsers) */
+    .fallback {
+      position: fixed;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      padding: 2rem;
+      text-align: center;
+      color: #e8e6e1;
+    }
+    .fallback h1 { font-size: 1.25rem; font-weight: 600; margin: 0; }
+    .fallback p { margin: 0; color: #a8a6a1; max-width: 34ch; line-height: 1.5; }
+    .fallback a {
+      display: inline-block;
+      margin-top: .25rem;
+      padding: .7rem 1.4rem;
+      background: #e8e6e1;
+      color: #1c1e22;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <object class="viewer" data="cv.pdf#view=FitH&toolbar=1" type="application/pdf">
+    <div class="fallback">
+      <h1>Lauren Frederick — CV</h1>
+      <p>Your browser can't display the PDF inline. Open or download it below.</p>
+      <a href="cv.pdf">Open CV (PDF)</a>
+    </div>
+  </object>
+</body>
+</html>
